@@ -1,8 +1,7 @@
 import React from "react";
 import { Button, Col, Row, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+
 
 
 class MainPage extends React.Component {
@@ -14,7 +13,7 @@ class MainPage extends React.Component {
   
     async getLocations() {
       try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=8558a0f19eaefa322b298b94d7580a8c`)
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London&APPID=8558a0f19eaefa322b298b94d7580a8c`)
         if (response.ok) {
           const data  = await response.json()
           console.log(data)
