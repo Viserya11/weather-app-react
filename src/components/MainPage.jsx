@@ -14,10 +14,12 @@ class MainPage extends React.Component {
   
     async getLocations() {
       try {
-        const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=London&APPID=8558a0f19eaefa322b298b94d7580a8c")
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=8558a0f19eaefa322b298b94d7580a8c`)
         if (response.ok) {
           const data  = await response.json()
           console.log(data)
+          this.state.cities = data
+          console.log(this.state)
         } else {
           alert('Error fetching results')
         }
@@ -26,7 +28,10 @@ class MainPage extends React.Component {
       }
     }
   
-    
+    componentDidMount() {
+        this.getLocations()
+    }
+
     render() {
     return (
         <>
@@ -35,9 +40,9 @@ class MainPage extends React.Component {
             
           
         <input type="text" placeholder="Enter location..." />
-        <div>  {/* {locations.map((locationData) => (
-        <p>{locationData._id}</p>))} */}<h1 id="h1">10C</h1>
-        <p id="city">City</p></div>
+        <div>   
+        <p></p> <h1 id="h1"></h1>
+        <p id="city">{this.state.cities.name}</p></div>
         <Row id="buttonrow"><Link to="/search"><Button id="seemore">See more</Button></Link><Button  id="searchbutton">Saved locations</Button></Row>
         
       </Container>
