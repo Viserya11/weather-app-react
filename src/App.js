@@ -14,8 +14,8 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />}>
-          <Route path="saved" element={<SavedCities />} />
-          <Route path="search" element={<SearchCities />} />
+          <Route path="/saved" element={<SavedCities />} />
+          <Route path="/search" element={<SearchCities />} />
           <Route path="*" element={<NotFound/>} />
         </Route>
       </Routes>

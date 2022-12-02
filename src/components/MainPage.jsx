@@ -12,7 +12,7 @@ class MainPage extends React.Component {
         <div>City</div>
         <div>Temperature</div>
         <div>
-            <Link to='saved'>
+            <Link to='./saved'>
             <Button>Saved Locations</Button></Link></div>
       </div>
     );
