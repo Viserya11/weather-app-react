@@ -13,7 +13,7 @@ class MainPage extends React.Component {
   async getLocations(query) {
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${query}&APPID=8558a0f19eaefa322b298b94d7580a8c`
+        `https://api.openweathermap.org/data/2.5/weather?q=${query}&APPID=8558a0f19eaefa322b298b94d7580a8c&units=metric`
       );
       if (response.ok) {
         const data = await response.json();
@@ -56,7 +56,7 @@ class MainPage extends React.Component {
           </Button>
           
           <div>
-            <p></p> <h1 id="h1">{}</h1>
+            <p></p> <h1 id="h1">{this.state.cities?.main?.temp}C</h1>
             <p id="city">{this.state.cities.name}</p>
           </div>
           <Row id="buttonrow">
