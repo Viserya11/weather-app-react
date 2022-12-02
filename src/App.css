@@ -50,3 +50,11 @@ input {
 .row {
   text-align: center;
 }
+
+#h1 {
+  font-size: 4em;
+}
+
+#city {
+  font-size: 2em;
+}

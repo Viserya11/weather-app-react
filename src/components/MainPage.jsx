@@ -32,7 +32,8 @@ class MainPage extends React.Component {
           
         <input type="text" />
         <div>  {/* {locations.map((locationData) => (
-        <p>{locationData._id}</p>))} */}<p>City</p></div>
+        <p>{locationData._id}</p>))} */}<h1 id="h1">10C</h1>
+        <p id="city">City</p></div>
         <Row><Link to="/search"><Button id="seemore">See more</Button></Link><Button  id="searchbutton">Saved locations</Button></Row>
         
       </Container>
