@@ -9,12 +9,12 @@ class MainPage extends React.Component {
     state = {
         isLoading: true,
         isError: false,
-        weather: [],
+        cities: [],
       };
   
     async getLocations() {
       try {
-        const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=8558a0f19eaefa322b298b94d7580a8c")
+        const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=London&APPID=8558a0f19eaefa322b298b94d7580a8c")
         if (response.ok) {
           const data  = await response.json()
           console.log(data)
