@@ -8,17 +8,17 @@ import NotFound from './components/NotFound';
 function App() {
   return (
     <>
-      
+      <div className='bg'>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainPage />}>
+        <Route path="/" element={<MainPage />}/>
           <Route path="/saved" element={<SavedCities />} />
           <Route path="/search" element={<SearchCities />} />
           <Route path="*" element={<NotFound/>} />
-        </Route>
+       
       </Routes>
     </BrowserRouter>
-    
+    </div>
     </>
   );
 }
