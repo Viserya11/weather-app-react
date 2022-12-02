@@ -33,7 +33,7 @@ class MainPage extends React.Component {
     }
   
     componentDidMount() {
-        this.getLocations("London")
+        this.getLocations("City")
     }
 
 
@@ -49,7 +49,7 @@ class MainPage extends React.Component {
         <input type="text" value={this.state.input} onChange={(e) => {this.setState({...this.state, input: e.target.value})}} placeholder="Enter location..." />
         <Button  id="searchbutton" onClick={() => {this.getLocations(this.state.input)}}>Search</Button><div>   
             
-        <p></p> <h1 id="h1"></h1>
+        <p></p> <h1 id="h1">{}</h1>
         <p id="city">{this.state.cities.name}</p></div>
         <Row id="buttonrow"><Link to="/search"><Button id="seemore">See more</Button></Link><Button  id="searchbutton">Saved locations</Button></Row>
         

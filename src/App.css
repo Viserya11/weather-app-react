@@ -74,3 +74,7 @@ input {
 .background {
   height: 100vh;
 }
+
+.spacer {
+  min-height: 30vh;
+}
