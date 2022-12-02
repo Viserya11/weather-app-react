@@ -46,6 +46,7 @@ input {
 }
 
 #container {
+  
   background-color: #352c65;
   border-radius: 10px;
   width: 50vw;
@@ -68,4 +69,8 @@ input {
 
 ::selection {
   background-color: #dd9eb1;
+}
+
+.background {
+  height: 100vh;
 }

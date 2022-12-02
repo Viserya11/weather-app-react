@@ -8,7 +8,7 @@ import NotFound from './components/NotFound';
 function App() {
   return (
     <>
-      <div className='bg'>
+      <div className='background' style={{ backgroundImage:`url("https://cdn.discordapp.com/attachments/1024594853008506920/1048246568341479424/wallpaperflare.com_wallpaper.jpg")` }}>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />}/>
