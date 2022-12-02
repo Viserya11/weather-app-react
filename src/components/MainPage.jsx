@@ -6,13 +6,17 @@ import { useParams } from 'react-router-dom'
 
 
 class MainPage extends React.Component {
-
+    state = {
+        isLoading: true,
+        isError: false,
+        weather: [],
+      };
   
-    async getLocations( ) {
+    async getLocations() {
       try {
         const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=8558a0f19eaefa322b298b94d7580a8c")
         if (response.ok) {
-          const  data  = await response.json()
+          const data  = await response.json()
           console.log(data)
         } else {
           alert('Error fetching results')
@@ -30,11 +34,11 @@ class MainPage extends React.Component {
        
             
           
-        <input type="text" />
+        <input type="text" placeholder="Enter location..." />
         <div>  {/* {locations.map((locationData) => (
         <p>{locationData._id}</p>))} */}<h1 id="h1">10C</h1>
         <p id="city">City</p></div>
-        <Row><Link to="/search"><Button id="seemore">See more</Button></Link><Button  id="searchbutton">Saved locations</Button></Row>
+        <Row id="buttonrow"><Link to="/search"><Button id="seemore">See more</Button></Link><Button  id="searchbutton">Saved locations</Button></Row>
         
       </Container>
     

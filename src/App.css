@@ -22,17 +22,20 @@ input {
   background-color: #b6729b;
   border: 1px solid #b6729b;
   border-radius: 25px;
+  margin: 10px;
+  
 }
 
 #searchbutton:hover {
-  background-color: #885070;
-  border: 1px solid #885070;
+  background-color: #6c3c57;
+  border: 1px solid #6c3c57;
 }
 
 #seemore {
   border-radius: 25px;
   background-color: #673f7e;
   border: 1px solid #673f7e;
+  margin: 10px;
 }
 
 #seemore:hover {
@@ -58,4 +61,8 @@ input {
 
 #city {
   font-size: 2em;
+}
+
+::selection {
+  background-color: #dd9eb1;
 }
