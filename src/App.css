@@ -25,7 +25,8 @@ input {
 }
 
 #searchbutton:hover {
-  background-color: #995b80;
+  background-color: #885070;
+  border: 1px solid #885070;
 }
 
 #seemore {
