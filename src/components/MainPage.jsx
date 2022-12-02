@@ -28,6 +28,7 @@ class MainPage extends React.Component {
     }
   }
 
+
   componentDidMount() {
     this.getLocations("City");
   }
@@ -65,6 +66,7 @@ class MainPage extends React.Component {
             <Button id="searchbutton">Saved locations</Button>
           </Row>
         </Container>
+        
       </>
     );
   }
