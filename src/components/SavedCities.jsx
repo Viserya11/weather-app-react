@@ -9,9 +9,13 @@ class SavedCities extends React.Component {
         <>
         <div>
             <Container id="container">
-            <input id="input" type="text" />
-        <div> <p>City</p></div>
-        <Row><Link to="/search"><Button id="seemore">See more</Button></Link><Button  id="searchbutton">Saved locations</Button></Row>
+        <div> <p>City</p>
+        <p>City</p>
+        <p>City</p>
+        <p>City</p>
+        <p>City</p>
+        <p>City</p></div>
+        <Row><Link to="/"><Button id="seemore">Home</Button></Link></Row>
         </Container>
         </div>
         </>

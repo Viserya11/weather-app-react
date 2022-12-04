@@ -60,7 +60,10 @@ input {
 }
 
 #h1 {
+  vertical-align:middle;
+  display: flex;
   font-size: 4em;
+  line-height: 1.5;
 }
 
 #city {
@@ -79,3 +82,15 @@ input {
   min-height: 30vh;
 }
 
+.flexweather {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+}
+
+#weatherlogo {
+  display: flex;
+  width: 100px;
+  vertical-align: middle;
+ 
+}

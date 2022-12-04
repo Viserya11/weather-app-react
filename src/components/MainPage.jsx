@@ -28,16 +28,14 @@ class MainPage extends React.Component {
     }
   }
 
-
   componentDidMount() {
-    this.getLocations("City");
+    this.getLocations("Budapest");
   }
 
   render() {
     return (
       <>
         <Container id="container">
-          
           <input
             type="text"
             value={this.state.input}
@@ -54,19 +52,24 @@ class MainPage extends React.Component {
           >
             Search
           </Button>
-          
+
           <div>
-            <p></p> <h1 id="h1">{this.state.cities?.main?.temp}C</h1>
+            <div className="flexweather">
+              
+              <h1 id="h1">{this.state.cities?.main?.temp}C</h1>{" "}
+              {this.state.cities?.weather?.map((weather) => (
+                <img id="weatherlogo" attribute title={weather.description} src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}></img>
+              ))}
+            </div>
             <p id="city">{this.state.cities.name}</p>
           </div>
+
           <Row id="buttonrow">
-            <Link to="/search">
-              <Button id="seemore">See more</Button>
+            <Link to="/saved">
+              <Button id="seemore">Saved Locations</Button>
             </Link>
-            <Button id="searchbutton">Saved locations</Button>
           </Row>
         </Container>
-        
       </>
     );
   }
