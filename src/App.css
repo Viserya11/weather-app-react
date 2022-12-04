@@ -1,12 +1,10 @@
 .App {
   text-align: center;
-  
 }
 
 .bg {
   height: 100vh;
   background-image: url(./assets/background.jpg);
-  
 }
 
 input {
@@ -16,7 +14,6 @@ input {
   border: 1px solid #fff;
   color: #fff;
   width: 20vw;
-  
 }
 #searchbutton {
   background-color: #b6729b;
@@ -24,8 +21,6 @@ input {
   border-radius: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
-  
-  
 }
 
 #searchbutton:hover {
@@ -52,7 +47,6 @@ input {
   width: 50vw;
   min-height: 40vh;
   color: aliceblue;
-  
 }
 
 .row {
@@ -60,7 +54,7 @@ input {
 }
 
 #h1 {
-  vertical-align:middle;
+  vertical-align: middle;
   display: flex;
   font-size: 4em;
   line-height: 1.5;
@@ -92,5 +86,4 @@ input {
   display: flex;
   width: 100px;
   vertical-align: middle;
- 
 }

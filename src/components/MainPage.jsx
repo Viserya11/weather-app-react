@@ -55,10 +55,14 @@ class MainPage extends React.Component {
 
           <div>
             <div className="flexweather">
-              
               <h1 id="h1">{this.state.cities?.main?.temp}C</h1>{" "}
               {this.state.cities?.weather?.map((weather) => (
-                <img id="weatherlogo" attribute title={weather.description} src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}></img>
+                <img
+                  id="weatherlogo"
+                  attribute
+                  title={weather.description}
+                  src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}
+                ></img>
               ))}
             </div>
             <p id="city">{this.state.cities.name}</p>
