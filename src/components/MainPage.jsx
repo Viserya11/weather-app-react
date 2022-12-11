@@ -55,7 +55,7 @@ class MainPage extends React.Component {
 
           <div>
             <div className="flexweather">
-              <h1 id="h1">{this.state.cities?.main?.temp}C</h1>{" "}
+              <h1 id="h1">{Math.round(this.state.cities?.main?.temp)}C</h1>{" "}
               {this.state.cities?.weather?.map((weather) => (
                 <img
                   id="weatherlogo"

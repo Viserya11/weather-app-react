@@ -78,7 +78,7 @@ input {
 
 .flexweather {
   display: flex;
-  width: 35%;
+  width: 25%;
   justify-content: space-between;
 }
 
