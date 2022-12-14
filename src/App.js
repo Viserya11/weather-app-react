@@ -3,8 +3,11 @@ import MainPage from "./components/MainPage";
 import SavedCities from "./components/SavedCities";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./components/NotFound";
+import { useDispatch } from "react-redux";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
+  const dispatch = useDispatch()
   return (
     <>
       <div
@@ -16,7 +19,7 @@ function App() {
         <div className="spacer"></div>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<MainPage />} />
+            <Route path="/" element={<MainPage dispatch={dispatch} />} />
             <Route path="/saved" element={<SavedCities />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

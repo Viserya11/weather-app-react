@@ -16,6 +16,7 @@ input {
   width: 20vw;
 }
 #searchbutton {
+  margin-left: 10px;
   background-color: #b6729b;
   border: 1px solid #b6729b;
   border-radius: 25px;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Col, Row, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 class MainPage extends React.Component {
   state = {
@@ -69,6 +70,9 @@ class MainPage extends React.Component {
           </div>
 
           <Row id="buttonrow">
+            <Button id="searchbutton" onClick={() => {
+              this.props.dispatch({type: "ADD_CITY", payload: this.state.cities})
+            }}>Save city</Button>
             <Link to="/saved">
               <Button id="seemore">Saved Locations</Button>
             </Link>
