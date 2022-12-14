@@ -88,3 +88,9 @@ input {
   width: 100px;
   vertical-align: middle;
 }
+
+.savedcard {
+  display: flex;
+  height: 4.5rem;
+  padding: 5px;
+}

@@ -16,7 +16,7 @@ export default function SavedCities() {
       <div>
         {cities.map((city) => { if (!arr.includes(city.name)) {
           arr.push(city.name) 
-          return <><p>{city.name} <Button id="searchbutton" onClick={(e) => {dispatch({type: "REMOVE_CITY", payload: city.name})}}>Remove</Button></p></>}
+          return <><p className="savedcard"><p>{city.name} <h5>{city.main.temp}C</h5></p>  <Button id="searchbutton" onClick={(e) => {dispatch({type: "REMOVE_CITY", payload: city.name})}}>Remove</Button> </p></>}
         })}
         
       </div>
