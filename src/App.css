@@ -99,4 +99,8 @@ input {
   #container {
     width: 80vw;
   }
+
+  input {
+    min-width: 40vw;
+  }
 }
