@@ -94,3 +94,9 @@ input {
   height: 4.5rem;
   padding: 5px;
 }
+
+@media screen and (max-width: 720px) {
+  #container {
+    width: 80vw;
+  }
+}
