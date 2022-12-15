@@ -70,9 +70,17 @@ class MainPage extends React.Component {
           </div>
 
           <Row id="buttonrow">
-            <Button id="searchbutton" onClick={() => {
-              this.props.dispatch({type: "ADD_CITY", payload: this.state.cities})
-            }}>Save city</Button>
+            <Button
+              id="searchbutton"
+              onClick={() => {
+                this.props.dispatch({
+                  type: "ADD_CITY",
+                  payload: this.state.cities,
+                });
+              }}
+            >
+              Save city
+            </Button>
             <Link to="/saved">
               <Button id="seemore">Saved Locations</Button>
             </Link>
